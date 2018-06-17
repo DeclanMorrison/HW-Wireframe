@@ -1,0 +1,257 @@
+/* Colors:
+    - Orange: F06449;
+    - White: F5F1EF;
+    - Grey: DADAD9;
+    - Light Light Text: 9FAFB6;
+    - Light Text: 4F6D7A;
+    - Dark Text: 151515; */
+
+
+/* TO DO:
+    - Move Nav-Items down a bit
+    - 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+    text-align: center;
+    background-color: #DADAD9;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0px;
+    background-color: #F9F7F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0px 3px #B3B3B2;
+}
+
+.name-card{
+    position: relative;
+    top: -31px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #F9F7F6;
+    background-color: #F06449;
+    padding: 18px 15px;
+    float: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-item{
+    position: relative;
+    top: -9px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+
+    color: #9FAFB6; 
+    float: right;
+    border-color: #9FAFB6;
+    border-width: 1px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+
+    padding: 0px 7px;
+}
+
+div a:nth-child(1){
+    border-right-width: 0px;
+}
+
+div a:nth-child(3){
+    border-left-width: 0px;
+}
+
+.content{
+    float: left;
+    clear: both;
+
+    background-color: #F9F7F6;
+    width: 40%;
+
+    margin: 0% 0% 0% 10%;
+    margin-top: 30px;
+
+    padding: 30px 40px;
+
+    box-shadow: 3px 3px #B3B3B2;
+    overflow: auto;
+}
+
+.about{
+    clear: none;
+}
+
+img{
+    float: left;
+    margin-right: 15px;
+}
+
+hr{
+    clear: both;
+
+    border: 0;
+    height: 2px;
+    background: #C7C7C6;
+    margin-bottom: 20px;
+}
+
+h1{
+    float: left;
+    clear: both;
+
+    /* position: absolute;
+    left: 15%;
+    top: 100px; */
+
+    color: #F06449;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+
+    margin-bottom: 15px;
+
+    
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.3;
+    color: #4F6D7A;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #4F6D7A;
+}
+
+input[type=text], select, textarea{
+    margin: 15px;
+    margin-top: 5px;
+    width: 40%;
+    padding: 2px;
+    font-size: 14px;
+    color: #757575;
+    background-color: #F9F7F6;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #F06449;
+    font-family: monospace;
+    outline: none;
+
+
+}
+
+input[type=text]:focus, select:focus, textarea:focus{
+    background-color: white;
+}
+
+textarea{
+    width: auto;
+}
+
+input[type=submit]{
+    background-color: #F06449;
+    border: none;
+    color: #F9F7F6;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: #C5523C;
+    border: none;
+    color: #F9F7F6;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.thumbnail{
+    position: relative;
+    float: left;
+    width: 200px;
+    margin: 5%;
+    box-shadow: 3px 3px #B3B3B2;
+}
+
+.gallery{
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.thumbnail-banner{
+    position: absolute;
+    width: 200px;
+    bottom: 10px;
+    padding: 8px 0px;
+    color: #F9F7F6;
+    background-color: #F06449;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    color: #F9F7F6;
+    background-color: #838382;
+    font-family: 'Roboto Slab', serif;
+
+    box-shadow: 0px -5px #F06449;
+    padding: 10px 0px 10px 0px;
+}
+
+aside{
+    position: relative;
+    float: right;
+    background-color: #F9F7F6;
+    margin-right: 9%;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: 3px 3px #B3B3B2;
+    width: auto;
+}
+
+.social{
+    width: 44px;
+    height: auto;
+    margin: 5px;
+}
